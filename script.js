@@ -4,7 +4,7 @@ audiog=new Audio("over.wav");
 aud=new Audio("game.mp3");
 setTimeout(() => {
     aud.play();
-}, 1000);
+}, 100);
 document.onkeydown = function (e) {
     console.log("Key down is:", e.keyCode);
     if (e.keyCode == 38) {
