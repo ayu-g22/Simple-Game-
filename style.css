@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background-image: url("bg.jpg");
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.char{
+    position: absolute;
+    background-image: url("hero.png");
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    bottom: 20vh;
+    left: 0vw;
+}
+.obs{
+    position: absolute;
+    background-image: url("villian.png");
+    background-size: cover;
+    width: 60px;
+    height: 100px;
+    background-repeat: no-repeat;
+    bottom: 20vh;
+    right: 0vw;
+    animation: move 10s linear infinite;
+}
+.animate{
+    animation: jump 0.8s linear;
+}
+@keyframes jump{
+    0%{
+        bottom: 20vh;
+    }
+    50%{
+        bottom: 400px;
+    }
+    100%{
+        bottom: 20vh;
+    }
+}
+@keyframes move{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+.over,button{
+    text-align: center;
+    background-color: rgb(26, 24, 24);
+    padding: 11vh;
+    font-size: 15vh;
+    color: rgb(233, 23, 23);
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+button{
+    text-align: right;
+    font-size: large;
+    padding-right: 10vw;
+    color: rgb(27, 158, 15);
+}
+.score{
+    float: right;
+    width: 15vw;
+    height: 2vw;
+    font-size: 25px;
+    padding: 2vh;
+    background-color:rgba(0, 162, 255, 0.137);
+}
